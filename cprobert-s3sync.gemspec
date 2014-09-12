@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "bin/s3cmd",
     "bin/s3sync",
+    "cprobert-s3sync.gemspec",
     "docs/README.txt",
     "docs/README_s3cmd.txt",
     "docs/s3config.yml.example",
