@@ -12,7 +12,7 @@ require 'yaml'
 
 module S3Config
   
-  confpath = ["#{ENV['S3CONF']}", "#{ENV['HOME']}/.s3conf", "/etc/s3conf"]
+  confpath = ["#{ENV['S3CONF']}", "./config", "#{ENV['HOME']}/.s3conf", "/etc/s3conf"]
   
   confpath.each do |path|
     if File.exists?(path) and File.directory?(path) and File.exists?("#{path}/s3config.yml")
